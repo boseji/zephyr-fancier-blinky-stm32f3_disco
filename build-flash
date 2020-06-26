@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Copyright (c) 2020 Abhijit Bose <https://boseji.com>
+# SPDX-License-Identifier: Apache-2.0
+
+# Get the Source Directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+PROJ=`basename ${DIR}`
+BUILD_DIR="${DIR}/../${PROJ}_build"
+WEST_PATH=`find ~ -name ".west" | head -1`
+WORKSPACE_PATH="$( cd "$( dirname "${WEST_PATH}" )" >/dev/null 2>&1 && pwd )"
+
+# Check if we have the build directory
+if [ ! -d "${BUILD_DIR}" ]
+then
+	echo " Build directory not initialized "
+	exit 1
+fi
+
+# Configure Environment
+source ${WORKSPACE_PATH}/env.sh
+
+# Change to the correct directory
+cd ${BUILD_DIR}
+
+# Build the Project Directory
+west build
+
+# Flash the code
+west flash
+
