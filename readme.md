@@ -32,6 +32,18 @@ There is a complete set of tutorials to help you get started on **Zephyr OS** :
 - Application Development on **Zephyr OS** - creating the `fancier-blinky` <br>
   <https://boseji.com/posts/zephyr-part-3-app-dev>
 
+## Add-on Project Scripts
+
+Added here are two scripts for **Zephyr SDK**:
+
+1. [`init-project`](https://github.com/boseji/zephyr-fancier-blinky-stm32f3_disco/blob/master/init-project) = This script can be used to generate the project files 
+    needed for **Eclipse CDT** and generate the `ninja` aided build system.
+    This is designed so that we can use `west` to build the project for **Zephyr OS**
+    as well as do the same from **Eclipse CDT** IDE.
+
+2. [`build-flash`](https://github.com/boseji/zephyr-fancier-blinky-stm32f3_disco/blob/master/build-flash) = This can be use after the `init-project` to automatically build and then 
+   flash the code into the microcontroller.
+
 ## License
 
 Copyright (c) 2020 Abhijit Bose <https://boseji.com>
