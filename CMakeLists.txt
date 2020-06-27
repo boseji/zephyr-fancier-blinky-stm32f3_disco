@@ -15,7 +15,7 @@ set(BOARD stm32f3_disco)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 # The Project Name
-project(z_blinky)
+project(fancier_blinky_stm32f3_disco)
 
 # Collect all the files in the Source Directory for build target
 FILE(GLOB app_sources src/*.c)
