@@ -6,7 +6,7 @@
 # Get the Source Directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 PROJ=`basename ${DIR}`
-BUILD_DIR="${DIR}/../${PROJ}_build"
+BUILD_DIR="${DIR}/../build_${PROJ}"
 WEST_PATH=`find ~ -name ".west" | head -1`
 WORKSPACE_PATH="$( cd "$( dirname "${WEST_PATH}" )" >/dev/null 2>&1 && pwd )"
 
