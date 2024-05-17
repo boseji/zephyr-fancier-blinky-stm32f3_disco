@@ -9,7 +9,7 @@ In this project we are trying to also fix the **flashing** issue for **STM32F3 D
 We are using the [**STM32F3 Discovery**](https://www.st.com/en/evaluation-tools/stm32f3discovery.html)
 board as a target for this project.
 
-[![STM32F3 Discovery board running Zephyr OS with fancier blinky](https://www.boseji.com/images/zephyr-part-3-app-dev-1.jpg)](https://boseji.com/posts/zephyr-part-3-app-dev)
+[![STM32F3 Discovery board running Zephyr OS with fancier blinky](./boards/arm/stm32f3_disco/doc/img/stm32f3_disco.jpg)](https://boseji.com/posts/zephyr-part-3-app-dev)
 
 The goal of this project is:
 

@@ -3,6 +3,9 @@
 # Copyright (c) 2020 Abhijit Bose <https://boseji.com>
 # SPDX-License-Identifier: Apache-2.0
 
+# Exit on Error
+set -e
+
 # Get the Source Directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 PROJ=`basename ${DIR}`

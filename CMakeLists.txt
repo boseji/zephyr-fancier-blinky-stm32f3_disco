@@ -23,4 +23,3 @@ target_sources(app PRIVATE ${app_sources})
 
 # Older Method of Grouping
 #target_sources(app PRIVATE src/main.c)
-
